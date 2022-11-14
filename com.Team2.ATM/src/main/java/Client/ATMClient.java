@@ -1,5 +1,7 @@
 package Client;
 
+import Bank.CustomerInfo;
+
 import java.util.Scanner;
 
 public class ATMClient {
