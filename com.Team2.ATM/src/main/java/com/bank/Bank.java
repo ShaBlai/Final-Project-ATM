@@ -1,4 +1,4 @@
-package Bank;
+package com.bank;
 
 import java.util.Arrays;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 public class Bank {
 
     //list created as a database to reference their bank information
-    private List<CustomerInfo> userData = Arrays.asList(
+     private List<CustomerInfo> userData = Arrays.asList(
             //customer's information attached to their account
             new CustomerInfo(1234, "Blairy", "Shawn",
                     "Blair", 1010, .99, 12.34,1111),
@@ -17,6 +17,9 @@ public class Bank {
 
     );
 
+    public List<CustomerInfo> getUserData() {
+        return userData;
+    }
 
     //method in case the user inputs the incorrect username to their account
     public CustomerInfo nullCustomerUserName (String customerUserName) throws IllegalArgumentException {
