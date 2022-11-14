@@ -3,7 +3,7 @@ package com.bank;
 import java.math.BigDecimal;
 
 //package specific class only for Bank's access
- class CustomerInfo {
+ class CustomerInfo extends Bank{
 
      //fields for the customer's info in the bank
     private Integer customerCardNumber;

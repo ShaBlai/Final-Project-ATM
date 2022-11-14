@@ -16,9 +16,12 @@ public class ATMClient extends Bank {
     private static final double savings = 6;
     private static final int Exit = 7;
 
+    private double balance;
+
     Scanner scan = new Scanner(System.in);
 
     public ATMClient() {
+
     }
 
 
@@ -37,8 +40,30 @@ public class ATMClient extends Bank {
         {
             case 1:
             System.out.println("Enter amount you would like to withdraw");
-                int withdraw = scan.nextInt();
-                if(getUserData().)
+                double withdraw = scan.nextDouble();
+                if(balance >= withdraw) {
+                    balance -= withdraw;
+                }
+                else {
+                    System.out.println("Insufficient Balance");
+                }
+                break;
+
+            case 2:
+                System.out.println("Enter the amount you want to deposit");
+                double deposit = scan.nextDouble();
+                balance += deposit;
+                System.out.println("Deposit successful your current balance is "+balance);
+                break;
+
+            case 3:
+                System.out.println("Balance: " +balance);
+                break;
+
+            case 4:
+                System.out.println("Choose ");
+
+
 
 
         }

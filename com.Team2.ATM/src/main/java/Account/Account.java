@@ -9,7 +9,8 @@ public class Account {
     private double totalBalance;
     private String name;
 
-    public Account(int accountNumber, int atmCardNumber, int pin, double availableBalance, double totalBalance, String name) {git
+    public Account(int accountNumber, int atmCardNumber, int pin, double availableBalance,
+                   double totalBalance, String name) {
         this.accountNumber = accountNumber;
         this.atmCardNumber = atmCardNumber;
         this.pin = pin;
